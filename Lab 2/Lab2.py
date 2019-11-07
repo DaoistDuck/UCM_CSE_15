@@ -32,14 +32,13 @@ inputProposition1 = input("Enter proposition 1: ")
 inputProposition2 = input("Enter proposition 2: ")
 
 myTable = TruthTable(['p','q'],[inputProposition1 , inputProposition2])
-myTable.display()
 tableList = myTable.table
 checkValue = 0
 for row in tableList:
     propositionList = row[-1]
     if(propositionList[0] != propositionList[1]):
         checkValue = 1
-
+print(" ")
 if(checkValue == 0):
     print("The propositions are equivalent")
 else:
